@@ -1,0 +1,181 @@
+==Classroom===
+
+BUILDING	ROOM_NU   CAPACITY
+--------------- ------- ----------
+LHC-1		0.1		    50
+LHC-1		0.2		    50
+LHC-1		0.3		    50
+LHC-1		1.1	       100
+LHC-1		1.2	       100
+LHC-2		0.1	       100
+LHC-2		0.2	       100
+LHC-2		0.3	       100
+LHC-2		0.4	       100
+LHC-3		0.1	       200
+
+
+==Department==
+
+DEPT_NAME	     BUILDING		 BUDGET
+-------------------- --------------- ----------
+MACS		     0.1	       90000000
+CSE		          0.2	      100000000COURSE_I PREREQ_I
+-------- --------
+CS10	 CS10
+CS11	 CS11
+CS12	 CS12
+IT01	 IT01
+IT02	 IT02
+IT03	 IT03
+MA01	 MA01
+MA02	 MA02
+SM01	 SM01
+SM02	 SM02
+
+
+
+
+==Course ===
+
+COURSE_I TITLE						    DEPT_NAME		    CREDITS
+-------- -------------------------------------------------- -------------------- ----------
+MA01	 Programming					    MACS			  6
+MA02	 DBMS						        MACS			  6
+CS10	 ML						            CSE 			  6
+CS11	 AI						            CSE 			  6
+CS12	 Data Science					    CSE 			  6
+SM01	 Accounts					        SOM 			  4
+SM02	 Managerial Economics			    SOM 			  4
+IT01	 DBMS						        IT				  6
+IT02	 Networking					        IT				  6
+IT03	 OS						            IT				  6
+
+
+==INstructor==
+
+ID    NAME		   DEPT_NAME		    SALARY
+----- -------------------- -------------------- ----------
+INS01 Dr Sonali 	   MACS 		     50000
+INS02 Dr Kamath sr	   MACS 		     80000
+INS03 Dr Kamath jr	   MACS 		     40000
+INS04 Dr Archita	   MACS 		     45000
+INS05 Dr Nandgopal	   CSE			     50000
+INS06 Dr Amit		   CSE			     50000
+INS07 Dr Abhishek	   IT			     50000
+INS08 Dr Hamsa		   SOM			     55000
+INS09 Dr Praveen	   IT			     50000
+INS10 Dr Suman		   EEE			     50000
+
+
+==Section==
+
+COURSE_I SEC_ID 	      SEMEST	   YEAR BUILDING	ROOM_NU TIME
+-------- -------------------- ------ ---------- --------------- ------- ----
+MA01	 SEC01		      Fall	        2012 LHC-1		0.1	TS01
+MA02	 SEC02		      Winter	    2010 LHC-1		0.2	TS01
+CS10	 SEC03		      Spring	    2022 LHC-1		0.3	TS01
+CS11	 SEC04		      Fall	        2023 LHC-1		1.1	TS01
+CS12	 SEC05		      Spring	    2020 LHC-1		1.2	TS01
+SM01	 SEC06		      Fall	        2021 LHC-3		0.1	TS01
+SM02	 SEC07		      Winter	    2018 LHC-2		0.1	TS01
+IT01	 SEC08		      Summer	    2019 LHC-2		0.2	TS01
+IT02	 SEC09		      Fall	        2024 LHC-2		0.3	TS01
+IT03	 SEC10		      Summer	    2015 LHC-2		0.4	TS01
+
+==Teaches==
+
+ID    COURSE_I SEC_ID	SEMEST	     YEAR
+----- -------- -------- ------ ----------
+INS01 MA02     SEC02	Winter	     2010
+INS02 MA01     SEC01	Fall	     2012
+INS05 CS10     SEC03	Spring	     2022
+INS05 CS12     SEC05	Spring	     2020
+INS06 CS11     SEC04	Fall	     2023
+INS07 IT01     SEC08	Summer	     2019
+INS07 IT03     SEC10	Summer	     2015
+INS08 SM01     SEC06	Fall	     2021
+INS08 SM02     SEC07	Winter	     2018
+INS09 IT02     SEC09	Fall	     2024
+
+
+==Students==
+
+ID    NAME		   DEPT_NAME		  TOT_CRED
+----- -------------------- -------- ------------ ----------
+ca050 Sunil		     MACS 			90
+ca051 Sourav		 CSE			92
+ca052 Vishal		 IT				90
+ca053 Aryan		     MACS 			88
+ca054 harsh		   CSE				91
+ca055 Kanhaiya		   IT			91
+ca056 Apurv		    IT				90
+ca057 Nagender		  CSE			95
+ca058 Satish		  Mechanical	80
+ca059 Sambeet		  EEE			89
+
+
+
+==takes===
+
+ID    COURSE_I SEC_ID	SEMEST	     YEAR GR
+----- -------- -------- ------ ---------- --
+ca050 MA01     SEC01	Fall	     2012 AB
+ca050 MA02     SEC02	Winter	     2010 AB
+ca051 CS10     SEC03	Spring	     2022 AB
+ca052 IT01     SEC08	Summer	     2019 AB
+ca053 MA01     SEC01	Fall	     2012 AB
+ca053 MA02     SEC02	Winter	     2010 AB
+ca054 CS10     SEC03	Spring	     2022 AB
+ca055 IT01     SEC08	Summer	     2019 AB
+ca056 IT01     SEC08	Summer	     2019 AB
+ca057 CS10     SEC03	Spring	     2022 AB
+
+
+==advisor==
+
+S_ID  I_ID
+----- -----
+ca050 INS01
+ca051 INS02
+ca052 INS03
+ca053 INS04
+ca054 INS05
+ca055 INS06
+ca056 INS07
+ca057 INS08
+ca058 INS09
+ca059 INS10
+
+
+===time_slot===
+
+TIME D	 START_HR  START_MIN	 END_HR    END_MIN
+---- - ---------- ---------- ---------- ----------
+TS01 1	       12	  36	      2 	46
+TS02 6	       10	  36	      2 	46
+TS03 3	       20	  36	      2 	46
+TS04 1		    1	  36	      2 	46
+TS05 2	       14	  36	      2 	46
+TS06 3	       23	  36	      2 	46
+TS07 4		    8	  36	      2 	46
+TS08 5		    6	  36	      2 	46
+TS09 6	       16	  36	      2 	46
+TS10 7	       12	  30	      2 	46
+
+
+==prereq===
+
+COURSE_I PREREQ_I
+-------- --------
+CS10	 CS10
+CS11	 CS11
+CS12	 CS12
+IT01	 IT01
+IT02	 IT02
+IT03	 IT03
+MA01	 MA01
+MA02	 MA02
+SM01	 SM01
+SM02	 SM02
+
+
