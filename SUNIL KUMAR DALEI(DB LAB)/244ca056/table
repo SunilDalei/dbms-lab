@@ -15,22 +15,19 @@ LHC-3		0.1	       200
 
 
 ==Department==
-
 DEPT_NAME	     BUILDING		 BUDGET
 -------------------- --------------- ----------
-MACS		     0.1	       90000000
-CSE		          0.2	      100000000COURSE_I PREREQ_I
--------- --------
-CS10	 CS10
-CS11	 CS11
-CS12	 CS12
-IT01	 IT01
-IT02	 IT02
-IT03	 IT03
-MA01	 MA01
-MA02	 MA02
-SM01	 SM01
-SM02	 SM02
+MACS		     LHC-1	       90000000
+CSE		         LHC-1	      100000000
+IT		        LHC-1	       60000000
+EEE		        LHC-1	       60000000
+ETC		         LHC-1	       40000000
+CHEMICAL	     LHC-2	       20000000
+Mechanical	     LHC-2	       20000000
+CIVIL		     LHC-2		    3000000
+Electrical	     LHC-2	       30000000
+SOM		        LHC-3	       56500000
+
 
 
 
@@ -51,7 +48,7 @@ IT02	 Networking					        IT				  6
 IT03	 OS						            IT				  6
 
 
-==INstructor==
+==Instructor==
 
 ID    NAME		   DEPT_NAME		    SALARY
 ----- -------------------- -------------------- ----------
@@ -65,7 +62,8 @@ INS07 Dr Abhishek	   IT			     50000
 INS08 Dr Hamsa		   SOM			     55000
 INS09 Dr Praveen	   IT			     50000
 INS10 Dr Suman		   EEE			     50000
-
+INS11 Dr Sourav        NULL              69000
+INS12 Dr Vishal        NULL              69000
 
 ==Section==
 
@@ -98,7 +96,7 @@ INS08 SM02     SEC07	Winter	     2018
 INS09 IT02     SEC09	Fall	     2024
 
 
-==Students==
+==Student==
 
 ID    NAME		   DEPT_NAME		  TOT_CRED
 ----- -------------------- -------- ------------ ----------
@@ -106,12 +104,12 @@ ca050 Sunil		     MACS 			90
 ca051 Sourav		 CSE			92
 ca052 Vishal		 IT				90
 ca053 Aryan		     MACS 			88
-ca054 harsh		   CSE				91
-ca055 Kanhaiya		   IT			91
-ca056 Apurv		    IT				90
-ca057 Nagender		  CSE			95
-ca058 Satish		  Mechanical	80
-ca059 Sambeet		  EEE			89
+ca054 harsh		     CSE			91
+ca055 Kanhaiya		 IT		    	91
+ca056 Apurv		     IT 			90
+ca057 Nagender		 CSE			95
+ca058 Satish		 Mechanical 	80
+ca059 Sambeet		 EEE			89
 
 
 
