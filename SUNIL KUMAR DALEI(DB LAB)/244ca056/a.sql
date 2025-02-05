@@ -1,3 +1,36 @@
+-- Classroom
+
+insert all 
+into classroom values('LHC-1','0.1',50) 
+into classroom values('LHC-1','0.1',50) 
+into classroom values('LHC-1','0.1',50) 
+into classroom values('LHC-1','0.1',100) 
+into classroom values('LHC-1','0.1',100) 
+into classroom values('LHC-2','0.1',100) 
+into classroom values('LHC-2','0.1',100) 
+into classroom values('LHC-2','0.1',100) 
+into classroom values('LHC-2','0.1',100) 
+into classroom values('LHC-3','0.1',200) 
+SELECT 1 from dual;
+
+
+--Department
+insert all 
+into department values('','',) 
+into department values('','',) 
+into department values('','',) 
+into department values('','',) 
+into department values('','',) 
+into department values('','',) 
+into department values('','',) 
+into department values('','',) 
+into department values('','',) 
+into department values('','',) 
+SELECT 1 from dual;
+
+
+
+--course
 insert all 
 into course values('MA01','Programming','MACS',6) 
 into course values('MA02','DBMS','MACS',6) 
