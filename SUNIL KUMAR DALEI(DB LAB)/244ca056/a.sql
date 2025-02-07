@@ -2,14 +2,14 @@
 
 insert all 
 into classroom values('LHC-1','0.1',50) 
-into classroom values('LHC-1','0.1',50) 
-into classroom values('LHC-1','0.1',50) 
-into classroom values('LHC-1','0.1',100) 
-into classroom values('LHC-1','0.1',100) 
+into classroom values('LHC-1','0.2',50) 
+into classroom values('LHC-1','0.3',50) 
+into classroom values('LHC-1','1.1',100) 
+into classroom values('LHC-1','1.2',100) 
 into classroom values('LHC-2','0.1',100) 
-into classroom values('LHC-2','0.1',100) 
-into classroom values('LHC-2','0.1',100) 
-into classroom values('LHC-2','0.1',100) 
+into classroom values('LHC-2','0.2',100) 
+into classroom values('LHC-2','0.3',100) 
+into classroom values('LHC-2','0.4',100) 
 into classroom values('LHC-3','0.1',200) 
 SELECT 1 from dual;
 
@@ -57,7 +57,9 @@ into instructor values('INS06','Dr Amit','CSE',50000)
 into instructor values('INS07','Dr Abhishek','IT',50000) 
 into instructor values('INS08','Dr Hamsa','SOM',55000) 
 into instructor values('INS09','Dr Praveen','IT',50000) 
-into instructor values('INS10','Dr Suman','EEE',50000) 
+into instructor values('INS10','Dr Suman','EEE',50000)
+into isntructor values('INS11','Dr Sourav',NULL,69000)
+into instructor values('INS12','Dr Vishal',NULL,69000)
 select 1 from dual;
 
 
