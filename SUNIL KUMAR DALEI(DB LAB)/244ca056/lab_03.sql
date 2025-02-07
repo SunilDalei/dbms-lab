@@ -73,17 +73,22 @@ SQL> select *from course c left join prereq p on p.course_id=c.course_id where p
 -- 25. Find the average number of credits taken by students in each department.
 SQL> select dept_name,avg(tot_cred) from student group by dept_name;
 
--- 26. Retrieve the names of students who have taken courses with the instructor "Einstein".
+-- 26. Retrieve the names of students who have taken courses with the instructor "Dr Abhishek".
+ SQL> select ins.name,tc.course_id,st.name from  instructor ins join teaches tc on tc.id=ins.id join takes tk on tk.course_id=tc.course_id join student st on st.id=tk.id where ins.name='Dr Abhishek';
 
--- 27. List all sections that are held in the "Watson" building.
+-- 27. List all sections that are held in the "LHC-1" building.
+ SQL> select *from section where building='LHC-1';
 
 -- 28. Find the total budget allocated to all departments.
+SQL> select dept_name,budget from department;
 
--- 29. Retrieve the names of students who have taken at least one course with a grade of "B".
+-- 29. Retrieve the names of students who have taken at least one course with a grade of "AB".
+SQL> select distinct s.name from student s join takes tk on tk.id=s.id where grade='AB';
 
 -- 30. List all instructors who have not taught any courses.
+SQL> select ins.name from instructor ins left join teaches tc  on ins.id=tc.id where course_id is NULL;
 
--- 31. Find the names of students who have taken all courses offered by the "Computer Science" department.
+-- 31. Find the names of students who have taken all courses offered by the "CSE" department.
 
 -- 32. Retrieve the names of instructors who have taught every course in their department.
 
