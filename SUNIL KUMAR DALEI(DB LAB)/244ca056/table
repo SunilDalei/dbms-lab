@@ -19,14 +19,14 @@ DEPT_NAME	     BUILDING		 BUDGET
 -------------------- --------------- ----------
 MACS		     LHC-1	       90000000
 CSE		         LHC-1	      100000000
-IT		        LHC-1	       60000000
-EEE		        LHC-1	       60000000
+IT		         LHC-1	       60000000
+EEE		         LHC-1	       60000000
 ETC		         LHC-1	       40000000
 CHEMICAL	     LHC-2	       20000000
 Mechanical	     LHC-2	       20000000
 CIVIL		     LHC-2		    3000000
 Electrical	     LHC-2	       30000000
-SOM		        LHC-3	       56500000
+SOM		         LHC-3	       56500000
 
 
 
@@ -71,9 +71,9 @@ COURSE_I SEC_ID 	      SEMEST	   YEAR BUILDING	ROOM_NU TIME
 -------- -------------------- ------ ---------- --------------- ------- ----
 MA01	 SEC01		      Fall	        2012 LHC-1		0.1	TS01
 MA02	 SEC02		      Winter	    2010 LHC-1		0.2	TS01
-CS10	 SEC03		      Spring	    2022 LHC-1		0.3	TS01
+CS10	 SEC03		      Spring	    2022 LHC-1		0.1	TS01
 CS11	 SEC04		      Fall	        2023 LHC-1		1.1	TS01
-CS12	 SEC05		      Spring	    2020 LHC-1		1.2	TS01
+CS12	 SEC05		      Spring	    2020 LHC-1		0.2	TS01
 SM01	 SEC06		      Fall	        2021 LHC-3		0.1	TS01
 SM02	 SEC07		      Winter	    2018 LHC-2		0.1	TS01
 IT01	 SEC08		      Summer	    2019 LHC-2		0.2	TS01
@@ -127,6 +127,7 @@ ca054 CS10     SEC03	Spring	     2022 AB
 ca055 IT01     SEC08	Summer	     2019 AB
 ca056 IT01     SEC08	Summer	     2019 AB
 ca057 CS10     SEC03	Spring	     2022 AB
+ca056 MA01     SEC01    Fall         2012 AA
 
 
 ==advisor==

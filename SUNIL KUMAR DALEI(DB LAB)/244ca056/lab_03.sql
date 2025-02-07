@@ -87,8 +87,9 @@ SQL> select distinct s.name from student s join takes tk on tk.id=s.id where gra
 
 -- 30. List all instructors who have not taught any courses.
 SQL> select ins.name from instructor ins left join teaches tc  on ins.id=tc.id where course_id is NULL;
-
--- 31. Find the names of students who have taken all courses offered by the "CSE" department.
+ 
+-- 31. Find the names of students who have taken all courses offered by the "MACS" department.
+SQL> select distinct st.name from  takes tk left join course c on tk.course_id=c.course_id join student st on st.id=tk.id  where c.dept_name='MACS';
 
 -- 32. Retrieve the names of instructors who have taught every course in their department.
 

@@ -79,7 +79,7 @@ into teaches values('INS09','IT02','SEC09','Fall',2024)
 into teaches values('INS07','IT03','SEC10','Summer',2015) 
 select 1 from dual;
 
---Students
+--Student
 insert all
 into student values('ca050','Sunil','MACS',90) 
 into student values('ca051','Sourav','CSE',92) 
@@ -121,6 +121,7 @@ into takes values('ca054','CS10','SEC03','Spring',2022,'AB')
 into takes values('ca055','IT01','SEC08','Summer',2019,'AB') 
 into takes values('ca056','IT01','SEC08','Summer',2019,'AB') 
 into takes values('ca057','CS10','SEC03','Spring',2022,'AB') 
+into takes values('ca056','MA01','SEC01','Fall',2012,'AA') 
 select 1 from dual;
 
 --advisor
